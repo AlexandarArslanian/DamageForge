@@ -1,0 +1,592 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#000000">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:gravity="center"
+                android:text="DPS CHECK! WHICH BUILD DOES MORE DPS?"
+                android:textAllCaps="true"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="5dp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textBuildA"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="build A"
+                    android:textAllCaps="true"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textBuildB"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="build B"
+                    android:textAllCaps="true"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_weight="1"
+                    android:gravity="start"
+                    android:orientation="horizontal">
+
+                    <Spinner
+                        android:id="@+id/selectItem1"
+                        android:layout_width="92dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="#22FFFFFF"
+                        android:minHeight="48dp"
+                        android:textAlignment="center"
+                        android:layout_gravity="center"/>
+
+                    <Spinner
+                        android:id="@+id/selectItem2"
+                        android:layout_width="92dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:background="#22FFFFFF"
+                        android:minHeight="48dp"
+                        android:textAlignment="center" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:orientation="horizontal">
+
+                    <Spinner
+                        android:id="@+id/selectItem1_2"
+                        android:layout_width="92dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="#22FFFFFF"
+                        android:minHeight="48dp"
+                        android:textAlignment="center"
+                        android:layout_gravity="center"/>
+
+                    <Spinner
+                        android:id="@+id/selectItem2_2"
+                        android:layout_width="92dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:background="#22FFFFFF"
+                        android:minHeight="48dp"
+                        android:textAlignment="center" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="11dp"
+                android:layout_weight="1" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_weight="1"
+                    android:gravity="start"
+                    android:orientation="horizontal">
+
+                    <Spinner
+                        android:id="@+id/selectItem3"
+                        android:layout_width="92dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="#22FFFFFF"
+                        android:minHeight="48dp"
+                        android:textAlignment="center"
+                        android:layout_gravity="center"/>
+
+                    <Spinner
+                        android:id="@+id/selectItem4"
+                        android:layout_width="92dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:background="#22FFFFFF"
+                        android:minHeight="48dp"
+                        android:textAlignment="center" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:orientation="horizontal">
+
+                    <Spinner
+                        android:id="@+id/selectItem3_2"
+                        android:layout_width="92dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="#22FFFFFF"
+                        android:minHeight="48dp"
+                        android:textAlignment="center"
+                        android:layout_gravity="center"/>
+
+                    <Spinner
+                        android:id="@+id/selectItem4_2"
+                        android:layout_width="92dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:background="#22FFFFFF"
+                        android:minHeight="48dp"
+                        android:textAlignment="center" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="11dp"
+                android:layout_weight="1" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_weight="1"
+                    android:gravity="start"
+                    android:orientation="horizontal">
+
+                    <Spinner
+                        android:id="@+id/selectItem5"
+                        android:layout_width="92dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="#22FFFFFF"
+                        android:minHeight="48dp"
+                        android:textAlignment="center"
+                        android:layout_gravity="center"/>
+
+                    <Spinner
+                        android:id="@+id/selectItem6"
+                        android:layout_width="92dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:background="#22FFFFFF"
+                        android:minHeight="48dp"
+                        android:textAlignment="center" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:orientation="horizontal">
+
+                    <Spinner
+                        android:id="@+id/selectItem5_2"
+                        android:layout_width="92dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="#22FFFFFF"
+                        android:minHeight="48dp"
+                        android:textAlignment="center"
+                        android:layout_gravity="center"/>
+
+                    <Spinner
+                        android:id="@+id/selectItem6_2"
+                        android:layout_width="92dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:background="#22FFFFFF"
+                        android:minHeight="48dp"
+                        android:textAlignment="center" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="11dp"
+                android:layout_weight="1" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/labelHealth"
+                    android:layout_width="106dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:textColor="#FFFFFF"
+                    android:textColorHint="#FFFFFF" />
+
+                <TextView
+                    android:id="@+id/textViewHP"
+                    android:layout_width="168dp"
+                    android:layout_height="wrap_content"
+                    android:text="textViewHP"
+                    android:textColor="#FFFFFF"
+                    android:textColorHint="#FFFFFF" />
+            </LinearLayout>
+
+            <SeekBar
+                android:id="@+id/seekBarHP"
+                style="@style/Widget.AppCompat.SeekBar.Discrete"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#20FFFFFF"
+                android:backgroundTint="#FFFFFF"
+                android:indeterminate="false"
+                android:max="60"
+                android:progress="20"
+                android:progressBackgroundTint="#FFFFFF"
+                android:progressTint="#FFFFFF"
+                android:secondaryProgressTint="#FFFFFF"
+                android:thumbTint="#FFFFFF" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/labelArmour"
+                    android:layout_width="106dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:textColor="#FFFFFF"
+                    android:textColorHint="#FFFFFF" />
+
+                <TextView
+                    android:id="@+id/textViewArmour"
+                    android:layout_width="168dp"
+                    android:layout_height="wrap_content"
+                    android:text="textViewArmour"
+                    android:textColor="#FFFFFF"
+                    android:textColorHint="#FFFFFF" />
+            </LinearLayout>
+
+            <SeekBar
+                android:id="@+id/seekBarArmour"
+                style="@style/Widget.AppCompat.SeekBar.Discrete"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#20FFFFFF"
+                android:backgroundTint="#FFFFFF"
+                android:indeterminate="false"
+                android:max="60"
+                android:progress="10"
+                android:progressBackgroundTint="#FFFFFF"
+                android:progressTint="#FFFFFF"
+                android:secondaryProgressTint="#FFFFFF"
+                android:thumbTint="#FFFFFF" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/labelMR"
+                    android:layout_width="106dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:textColor="#FFFFFF"
+                    android:textColorHint="#FFFFFF" />
+
+                <TextView
+                    android:id="@+id/textViewMR"
+                    android:layout_width="168dp"
+                    android:layout_height="wrap_content"
+                    android:text="textViewMR"
+                    android:textColor="#FFFFFF"
+                    android:textColorHint="#FFFFFF" />
+            </LinearLayout>
+
+            <SeekBar
+                android:id="@+id/seekBarMR"
+                style="@style/Widget.AppCompat.SeekBar.Discrete"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#20FFFFFF"
+                android:backgroundTint="#FFFFFF"
+                android:indeterminate="false"
+                android:max="60"
+                android:progress="5"
+                android:progressBackgroundTint="#FFFFFF"
+                android:progressTint="#FFFFFF"
+                android:secondaryProgressTint="#FFFFFF"
+                android:thumbTint="#FFFFFF" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="289dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/viewStats"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:textColor="#FFFFFF" />
+
+                <TextView
+                    android:id="@+id/viewStats2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:textColor="#FFFFFF" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/viewHiddenDPSLayout"
+                android:layout_width="match_parent"
+                android:layout_height="125dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/viewHiddenDPSText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:textColor="#FFFFFF"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/viewHiddenDPSText2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:textColor="#FFFFFF"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/bottomBar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <!-- <Spinner
+            android:id="@+id/savedBuilds"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="1"
+            android:background="#3197C599"
+            android:text="Saved Builds"
+            android:textColor="#FFFFFF" />-->
+
+        <Button
+            android:id="@+id/buttonPickA"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="#3197C599"
+            android:backgroundTintMode="add"
+            android:enabled="false"
+            android:foregroundGravity="center"
+            android:gravity="center"
+            android:text="Pick A"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/buttonGenerate"
+            android:layout_width="140dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="1"
+            android:backgroundTint="#6895CEE8"
+            android:backgroundTintMode="add"
+            android:elegantTextHeight="false"
+            android:foregroundGravity="center"
+            android:gravity="center"
+            android:text="Generate"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/buttonPickB"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="#3197C599"
+            android:backgroundTintMode="add"
+            android:enabled="false"
+            android:foregroundGravity="center"
+            android:gravity="center"
+            android:text="Pick B"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottomBar"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp">
+
+
+        <Button
+            android:id="@+id/buttonPuzzle"
+            android:layout_width="133dp"
+            android:layout_height="wrap_content"
+
+            android:layout_weight="1"
+            android:backgroundTint="#9FFFD24B"
+            android:backgroundTintMode="add"
+            android:foregroundGravity="center"
+            android:gravity="center"
+            android:text="Puzzle"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/buttonBuild"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:backgroundTint="#1E29B6F6"
+            android:text="Build"
+            android:textColor="#FFFFFF" />
+
+
+        <Button
+            android:id="@+id/buttonCompare"
+            android:layout_width="136dp"
+            android:layout_height="wrap_content"
+
+            android:layout_weight="1"
+            android:backgroundTint="#1E29B6F6"
+            android:foregroundGravity="center"
+            android:gravity="center"
+            android:text="Compare"
+            android:textColor="#FFFFFF" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
