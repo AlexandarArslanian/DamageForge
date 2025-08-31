@@ -6,6 +6,8 @@ This helps clarify when certain items are good to build.
 
 To test the App, feel free to download the APK onto an Android device, install it, and run it.
 Otherwise the code files may also be downloaded, opened in Android Studio, and ran from there onto an emulated device.
+Main Activities of the code can be found at the following directory:
+app/src/main/java/com/example/damageforge
 
 The Main "Build" screen showcases basic functionality, and can Save/Delete Builds created.
 
